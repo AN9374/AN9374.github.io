@@ -35,8 +35,17 @@
 </body> -->
 
 <!-- HW1Q5 ------------------------------------------------------------------------>
-<form action="sessions.php" method="POST">
+<form method="POST">
     <input type="text" name="sessionid" />
     <input type="submit" value="submit"/>
 </form>
+
+Session ID 
+<?php echo $_POST["sessionid"]; ?>
+
+<?php 
+$file = fopen("sessions.txt", "a") or die();
+fwrite($file, $_POST["sessionid"]);
+fclose($file)
+?>
 
