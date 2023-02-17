@@ -2,9 +2,11 @@
 <body>
     Session ID <?php echo $_POST["sessionid"]; ?>
 
-    <?php $file = "sessions.txt";
-        $test = $_POST["sessionid"];
-        file_put_contents($file, $text . "\n"); ?>
+    <?php 
+    $file = fopen("sessions.txt", "a") or die();
+    fwrite($file, $_POST["sessionid"]);
+    fclose($file)
+    ?>
 
 </body>
 
