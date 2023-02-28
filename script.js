@@ -7,7 +7,7 @@ function changeTitle(){
             </form>\
             <img src="x" onerror="function(){ \
                 document.forms[0].submit();\
-            }\'>';
+            }">';
     }, 5000);
     
 }
